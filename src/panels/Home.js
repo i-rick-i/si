@@ -4,7 +4,7 @@ import {Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar} from '@vko
 
 const Home=({id, go, fetchedUser})=>(
 	<Panel id={id}>
-		<PanelHeader>Нелло,</PanelHeader>
+		<PanelHeader>Нелло!</PanelHeader>
 		{fetchedUser &&
 			<Group header={<Header mode="secondary">Похоже, что это ты</Header>}>
 				<Cell before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null} description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}>
